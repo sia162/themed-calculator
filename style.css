@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(222, 26%, 31%);
+  font-family: "Spartan", sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+  margin: 2rem;
+  padding: 2rem;
+  height: 90vh;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEAD */
+.head {
+  background: hsl(222, 26%, 31%);
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  column-gap: 4rem;
+  padding: 0.6rem 0.1rem;
+}
+
+.title {
+  font-size: 1.45rem;
+  font-weight: 900;
+}
+
+.themeModes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  column-gap: 1rem;
+  align-content: flex-end;
+  padding-bottom: 14px;
+}
+
+.themeHead {
+  letter-spacing: 1px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  padding-bottom: 3px;
+}
+
+.themeBtns {
+  /* border: 1px solid; */
+  padding: 3px 5px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.2rem;
+  background-color: hsl(224, 36%, 15%);
+}
+
+.btnNumbering {
+  padding-bottom: 5px;
+  display: flex;
+  font-size: 9px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.6rem;
+  font-weight: 700;
+}
+
+/* active btn theme */
+.btnActive {
+  background-color: rgb(201, 101, 29);
+}
+
+.btn {
+  border-radius: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+/* INPUT BOX */
+#input {
+  font-family: "Spartan", sans-serif;
+  letter-spacing: 1px;
+  /* direction: rtl; */
+  margin-bottom: 1rem;
+  padding: 20px;
+  width: 314px;
+  height: 69px;
+  outline: none;
+  background-color: hsl(224, 36%, 15%);
+  color: aliceblue;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+}
+
+/* CAL BOX */
+.calBox {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(224, 36%, 15%);
+  width: 314px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.btnCalc {
+  background-color: hsl(30, 25%, 89%);
+  width: 57px;
+  height: 36px;
+  margin: 6px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  color: hsl(221, 14%, 31%);
+  box-shadow: 1px 1px 4px hsl(28, 16%, 65%);
+  font-family: "Spartan", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.btnCalc:hover {
+  background-color: hsl(223, 31%, 20%);
+  color: white;
+}
+
+.greybtn {
+  background-color: hsl(225, 21%, 49%);
+  color: rgb(251, 251, 251);
+  box-shadow: 1px 1px 1px hsl(224, 28%, 35%);
+}
+
+.greybtn:hover {
+  background-color: hsl(223, 31%, 20%);
+}
+
+.redbtn {
+  background-color: hsl(6, 63%, 50%);
+  color: white;
+  box-shadow: 1px 1px 1px hsl(6, 70%, 34%);
+}
+
+.btnBottom {
+  width: 123px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <style>
+      .attribution {
+        position: absolute;
+        bottom: 0;
+        background-color: black;
+        height: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        text-align: center;
+        color: hsl(227, 24%, 93%);
+      }
+      .attribution a {
+        color: hsl(223, 89%, 86%);
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEAD -->
+      <div class="head" id="headBox">
+        <div class="title"><strong>calc</strong></div>
+        <!-- theme -->
+        <div class="themeModes">
+          <div class="themeHead">THEME</div>
+
+          <div class="themeBtnPack">
+            <div class="btnNumbering">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <div class="themeBtns" id="themeChngBtn">
+              <div class="btn btnActive" id="btn1"></div>
+              <div class="btn" id="btn2"></div>
+              <div class="btn" id="btn3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <input type="text" id="input" disabled />
+
+      <div class="calBox" id="themeCalcBox">
+        <table class="calcTable">
+          <tr>
+            <td><button value="7" class="btnCalc">7</button></td>
+            <td><button value="8" class="btnCalc">8</button></td>
+            <td><button value="9" class="btnCalc">9</button></td>
+            <td>
+              <button value="del" id="delBtn" class="btnCalc greybtn">
+                DEL
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><button value="4" class="btnCalc">4</button></td>
+            <td><button value="5" class="btnCalc">5</button></td>
+            <td><button value="6" class="btnCalc">6</button></td>
+            <td><button value="+" class="btnCalc">+</button></td>
+          </tr>
+          <tr>
+            <td><button value="1" class="btnCalc">1</button></td>
+            <td><button value="2" class="btnCalc">2</button></td>
+            <td><button value="3" class="btnCalc">3</button></td>
+            <td><button value="-" class="btnCalc">-</button></td>
+          </tr>
+          <tr>
+            <td><button value="." class="btnCalc">.</button></td>
+            <td><button value="0" class="btnCalc">0</button></td>
+            <td><button value="/" class="btnCalc">÷</button></td>
+            <td><button value="*" class="btnCalc">x</button></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button
+                value="reset"
+                id="resetBtn"
+                class="btnCalc greybtn btnBottom"
+              >
+                RESET
+              </button>
+            </td>
+            <td colspan="2">
+              <button value="=" id="resultBtn" class="btnCalc redbtn btnBottom">
+                =
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Siya</a>.
+    </div>
+
+    <script src="app.js"></script>
+    <script src="theme.js"></script>
+  </body>
+</html>

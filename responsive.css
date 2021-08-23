@@ -1,0 +1,53 @@
+@media only screen and (max-width: 324px) {
+  .btnCalc {
+    width: 38px;
+  }
+
+  .calBox {
+    width: 254px;
+  }
+  .btnBottom {
+    width: 88px;
+  }
+
+  #input {
+    width: 254px;
+  }
+
+  .head {
+    width: 255px;
+  }
+}
+
+@media only screen and (max-width: 264px) {
+  .container {
+    margin: 0rem;
+    padding: 0rem;
+    height: 96vh;
+  }
+  .calBox {
+    width: 184px;
+  }
+
+  .btnCalc {
+    width: 31px;
+    font-size: 0.8rem;
+  }
+
+  .btnBottom {
+    width: 71px;
+  }
+
+  #input {
+    width: 184px;
+  }
+
+  .head {
+    width: 179px;
+    column-gap: 0rem;
+  }
+
+  .attribution {
+    font-size: 0.6rem;
+  }
+}
